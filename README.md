@@ -35,4 +35,4 @@ The MCA Referee Test is an interactive, offline-ready multiple-choice quiz desig
 This project is for educational and training purposes. You may modify and use it freely within MCA or related referee training contexts.
 
 ## Contact
-For questions or feedback, contact the project maintainer at **[your-email@example.com]**.
+For questions or feedback, contact the project maintainer at **[wafulacaleb233@gmail.com]**.
