@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MCA Referee Test — MCQ Quiz</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* --- START SCREEN STYLING --- */
+    #start-screen h2 {
+      font-size: 1.4rem;
+      color: #011307; /* professional navy blue */
+      margin-bottom: 12px;
+    }
+
+    #start-screen p {
+      font-size: 0.9rem;
+      color: #00272b; 
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    #start-screen .btn {
+      font-size: 0.95rem;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+
+    #start-screen .btn.primary {
+      background: #00272b;
+      color: #fff;
+      border: none;
+    }
+
+    #start-screen .btn.primary:hover {
+      background: #024046;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    /* Center content vertically a bit more */
+    #start-screen {
+      padding: 30px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <h1>Referee Knowledge Test — Laws of the Game</h1>
+      <p class="sub">Sharpen your referee knowledge with our official 15-minute, 10-question assessment.</p>
+    </header>
+
+    <!-- START SCREEN -->
+    <section id="start-screen" class="card center">
+      <h2>Welcome Referee!</h2>
+      <p>This assessment tests your understanding of the Laws of the Game. You have 15 minutes to answer 10 carefully crafted multiple-choice questions.</p>
+      <p>Each question simulates real-match scenarios. Stay focused, answer carefully, and do your best.</p>
+      <button id="startBtn" class="btn primary">Start Test</button>
+    </section>
+
+    <!-- QUIZ SCREEN -->
+    <section id="quiz-screen" class="card hidden">
+      <div class="top-row">
+        <div id="progress">Question 1 of 10</div>
+        <div>
+          <div id="timer">Time left: <span id="timeLeft">15:00</span></div>
+          <div class="time-bar-container">
+            <div id="timeBar" class="time-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="questionBox" class="question-box"></div>
+
+      <div class="actions">
+        <button id="prevBtn" class="btn">Previous</button>
+        <button id="nextBtn" class="btn">Next</button>
+        <button id="submitBtn" class="btn primary">Submit</button>
+      </div>
+    </section>
+
+    <!-- RESULT SCREEN -->
+    <section id="result-screen" class="card hidden center">
+      <h2 id="finalMessage">Test Completed!</h2>
+      <p id="finalScore">You scored X out of Y</p>
+
+      <div class="actions">
+        <button id="downloadCsvBtn2" class="btn">Download CSV</button>
+        <button id="downloadHtmlBtn2" class="btn">Download HTML Report</button>
+      </div>
+    </section>
+
+    <footer>
+      <small>Built for offline use — MCA Referee Laws of the Game Assessment</small>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
